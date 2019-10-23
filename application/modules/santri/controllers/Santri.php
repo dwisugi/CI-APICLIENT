@@ -13,9 +13,9 @@ class Santri extends MX_Controller
     {
         $data['judul'] = 'Daftar Santri'; 
         $data['santri'] = $this->Santri_m->getDataSantri();
-        $this->load->view('v_templates/header', $data);
-        $this->load->view('v_santri/index', $data);
-        $this->load->view('v_templates/footer'); 
+        // $data['santri'] = $this->Santri_m->getAllMahasiswa();
+        $this->load->view('s_templates/header', $data);
+        $this->load->view('s_santri/index', $data);
+        $this->load->view('s_templates/footer'); 
     }
-
 }

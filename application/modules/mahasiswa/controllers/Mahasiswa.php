@@ -8,7 +8,7 @@ class Mahasiswa extends MX_Controller
         $this->load->model('Mahasiswa_m');
         $this->load->library('form_validation');
     }
-
+  
     public function index()
     {
         $data['judul'] = 'Daftar Mahasiswa'; 
