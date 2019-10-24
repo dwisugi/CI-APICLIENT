@@ -17,17 +17,17 @@
 
     <div class="row mt-3">
         <div class="col-md-6">
-            <h3>Daftar Mahasiswa</h3>
-            <?php if (empty($santri)) : ?>
+            <h3>Daftar Produk</h3>
+            <?php if (empty($produk)) : ?>
                 <div class="alert alert-danger" role="alert">
-                data Santri tidak ditemukan.
+                data produk tidak ditemukan.
                 </div>
             <?php endif; ?>
             <ul class="list-group">
-            <?php foreach ($santri as $mhs) : ?>
+            <?php foreach ($produk as $pdk) : ?>
                 <li class="list-group-item">
-                    <?= $mhs['nama']; ?>
-                     <a href="<?= base_url(); ?>santri/detail/<?= $mhs['id_produk']; ?>"
+                    <?= $pdk['nama']; ?>
+                     <a href="<?= base_url(); ?>produk/detail/<?= $pdk['id_produk']; ?>"
                         class="badge badge-primary float-right">detail</a>
                 </li>
                 <?php endforeach; ?>
